@@ -1,2 +1,2 @@
 # TX
-<examples>
+<index.html>
