@@ -1,0 +1,10 @@
+div{
+background-color: yellow;
+border: 1px solid black;
+height: 100px;
+width: 300px;
+}
+.d2{
+   transform: rotateZ(90deg);
+    
+}
