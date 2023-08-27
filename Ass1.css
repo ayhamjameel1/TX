@@ -1,0 +1,29 @@
+.d1 {
+  border: 1px solid #000000;
+  background-color: #ff0000;
+  border: none;
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+}
+.d2 {
+  border: 1px solid #000000;
+  background-color: #0f35f1;
+  border: none;
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+.d3 {
+  border: 1px solid #000000;
+  border: none;
+  background-color: #e1f10f;
+  height: 100px;
+  width: 120px;
+  position: absolute;
+  top: 45px;
+  left: 30px;
+}

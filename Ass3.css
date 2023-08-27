@@ -1,0 +1,24 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c1 {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    #f10f0f,
+    #f10fea,
+    #0f35f1,
+    #0fcdf1,
+    #0ff118,
+    #e0f10f,
+    #f10f0f
+  );
+  margin: 250px;
+}
