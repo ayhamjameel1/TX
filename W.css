@@ -24,9 +24,7 @@ body {
   text-align: center;
 }
 
-.h1 {
-  font-size: 60px;
-}
+
 
 p {
   font-size: 10px;
@@ -98,6 +96,7 @@ p {
   font-size: 10px;
 }
 
+
 .soc a,
 .soc span {
   margin-right: 20px;
@@ -105,6 +104,9 @@ p {
 
 .soc span:last-child {
   margin-right: 0;
+}
+.soc .m{
+color: black;
 }
 
 .icon-button {
@@ -127,12 +129,12 @@ p {
   width: 400px;
   position: absolute;
 }
-.C2 {
+.C2 a {
   text-align: center;
-
   height: 20px;
   width: 390px;
   font-size: 90px;
+  color: black;
 }
 .C3 {
   text-align: justify;
@@ -340,6 +342,9 @@ p {
   border-top: 1px solid rgba(66, 51, 51, 0.71);
   border-left: 1px solid rgba(66, 51, 51, 0.71);
 }
+.p2{
+  color: rgba(128, 128, 128, 0.533);
+}
 
 .g1 {
   font-size: 10px;
@@ -350,3 +355,12 @@ a {
 .a1 {
   text-decoration: none;
 }
+.x .p2{
+padding-right: 1000px;
+
+}
+button{
+
+
+}
+
