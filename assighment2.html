@@ -4,6 +4,14 @@
     <title>s</title>
   </head>
   <link rel="stylesheet" href="assighment2.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".list-button").click(function () {
+        $(".head").slideToggle("slow"); // Toggle the display property
+      });
+    });
+  </script>
   <body>
     <div class="null">
       <div class="img6">
@@ -40,16 +48,20 @@
         <div class="img5">
           <img src="5.png" alt="s" height="20px" />
         </div>
-        <div class="images">
-          <div class="row">
-            <img src="pic1.png" alt="s" class="square-image" />
-            <img src="pic2.png" alt="s" class="square-image" />
-          </div>
-          <div class="row">
-            <img src="pic3.png" alt="s" class="square-image" />
-            <img src="pic4.png" alt="s" class="square-image" />
-          </div>
-        </div>
+<div class="grid-container">
+  <a href="https://www.youtube.com">
+    <img src="pic1.png" alt="s" class="square-image" />
+  </a>
+  <a href="https://www.kick.com">
+    <img src="pic2.png" alt="s" class="square-image" />
+  </a>
+  <a href="https://www.bmw.com" class="square-image-link">
+    <img src="pic3.png" alt="s" class="square-image" />
+  </a>
+  <a href="https://www.nike.com" class="square-image-link">
+    <img src="pic4.png" alt="s" class="square-image" />
+  </a>
+</div>
         <div class="loading">
           <a>LOADING</a>
         </div>
@@ -90,5 +102,6 @@
         </div>
       </div>
     </div>
+    <div class="head"></div>
   </body>
 </html>
