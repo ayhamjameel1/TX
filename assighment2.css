@@ -86,7 +86,7 @@ strong {
   display: block; /* This makes the entire anchor tag a block element */
   width: 100%; /* Takes the full width of the parent container */
   height: 100%;
-   /* Takes the full height of the parent container */
+  /* Takes the full height of the parent container */
 }
 
 .square-image {
