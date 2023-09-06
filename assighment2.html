@@ -6,11 +6,18 @@
   <link rel="stylesheet" href="assighment2.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script>
-    $(document).ready(function () {
-      $(".list-button").click(function () {
-        $(".head").slideToggle("slow"); // Toggle the display property
-      });
+   $(document).ready(function () {
+  $(".list-button").click(function () {
+    $(".head").slideDown("slow", function () {
+ $(".xbutton").show(function () {
+$(".end-Button").click(function (){
+  $(".head").slideUp("slow");
+});
+ });
     });
+  });
+});
+
   </script>
   <body>
     <div class="null">
@@ -31,7 +38,7 @@
             <img src="9.png" alt="s" height="149px" width="320px" />
           </div>
           <div class="hello">
-            <p class="phello"><strong>Hello,</strong></p>
+            <p style="font-size: 30px;margin-left: 30px; position: absolute;">Hello,</p>
             <p class="pargh">
               Donec commodo leo est. quis eleifend urna pellentesque eget. Prion
               scelerisque odio eu nisi viverra. nec ullamcorper augue sagittis.
@@ -102,6 +109,110 @@
         </div>
       </div>
     </div>
-    <div class="head"></div>
+    <div class="head">
+      <div class="xbutton">
+        <button class="end-Button"><img src="end.png" alt="s" /></button>
+      </div>
+      <div class="Chead">
+        <div class="Ihead">
+          <img src="9.png" alt="s" height="170px" width="300px" />
+        </div>
+        <div class="light2">
+          <img src="3.png" alt="s" height="20px" />
+        </div>
+        <div class="arrow2">
+          <img src="6.png" alt="s" height="17px" />
+        </div>
+        <div class="profile">
+          <img src="ayham.png" id="pro" alt="s" height="150px" width="150px" />
+        </div>
+        <div class="wave">
+          <img src="4.png" alt="s" height="20px" />
+        </div>
+        <div class="Htext">
+          <a>Hello, i'm ayham <strong>Jameel</strong></a>
+        </div>
+        <div class="Htext2">
+          <a
+            >nec ullamcorper augue sagitssis. Proin faucibus lorem nisi. Donec
+            commodo leo est, quis eleifend urna pellentesque eget.</a
+          >
+        </div>
+        <div class="Hparagraph">
+          <a
+            >Proion scelerisque odio eu nisi viverra, nec ullamcorper gue
+            <a href="mailto:ayham.2016.2015@gmail.com" style="color: aqua"
+              >contact me</a
+            ></a
+          >
+        </div>
+        <div class="Fshape">
+          <div class="shape1">
+            <div class="textShape">
+              <a>PHOTOSHOP</a>
+            </div>
+            <div class="pinkShape"></div>
+            <div class="blackShape"></div>
+            <div class="shapePercentge">
+              <a>98%</a>
+            </div>
+          </div>
+          <div class="shape2">
+            <div class="textShape">
+              <a>ILLUSTRATR</a>
+            </div>
+            <div class="yellowShape"></div>
+            <div class="blackShape"></div>
+            <div class="shapePercentge">
+              <a>70%</a>
+            </div>
+          </div>
+          <div class="shape3">
+            <div class="textShape">
+              <a>HTML/CSS</a>
+            </div>
+            <div class="blueShape"></div>
+            <div class="blackShape"></div>
+            <div class="shapePercentge">
+              <a>60%</a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-container2">
+          <div class="grid-item2">
+            <span class="gridNum">2000 - 2008</span>
+            <span class="gridName"
+              >Jr. Graphic Designer |
+              <a href="www.abc.com" style="text-decoration: none; color: aqua"
+                >ABC lnc.</a
+              ></span
+            >
+          </div>
+          <div class="grid-item2">
+            <span class="gridNum">2008 - 2010</span>
+            <span class="gridName"
+              >Graphic Specialist |
+              <a
+                href="www.graphicstudio.com"
+                style="text-decoration: none; color: aqua"
+                >GRAPHICSTUDIO</a
+              ></span
+            >
+          </div>
+          <div class="grid-item2">
+            <span class="gridNum">2010 - Present</span>
+            <span class="gridName"
+              >Creative Director |
+              <a
+                href="www.desginarts.com"
+                style="text-decoration: none; color: aqua"
+                >DESIGN ARTS</a
+              ></span
+            >
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
   </body>
 </html>
