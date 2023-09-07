@@ -14,7 +14,7 @@ body {
   background-image: linear-gradient(
     to bottom,
    #FFFFFF 70%,
-    #80808016 70%
+    #80808010 70%
   );
   position: absolute;
   z-index: -1;
@@ -31,7 +31,7 @@ body {
 }
 .folio {
   width: max-content;
-  padding-top: 140px;
+  padding-top: 160px;
   position: absolute;
 }
 .fimage {
@@ -115,7 +115,7 @@ strong {
   padding-top: 20px;
 }
 .Ptelphone {
-  font-size: 7px;
+  font-size: 10px;
   padding-top: 6px;
   color: #1a3c317e;
 }
