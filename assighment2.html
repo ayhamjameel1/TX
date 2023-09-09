@@ -1,28 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>s</title>
+    <link rel="stylesheet" href="assighment2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="assighment2.js"></script>
   </head>
-  <link rel="stylesheet" href="assighment2.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".list-button").click(function () {
-        $(".head").slideDown("slow", function () {
-          $(".xbutton").show(function () {
-            $(".end-Button").click(function () {
-              $(".head").slideUp(1000);
-            });
-          });
-        });
-      });
-    });
-  </script>
   <body>
-    <div class="null">
-      <div class="img6">
+    <div class="mainPAGE">
+      <div class="arrowIMAGE">
         <img src="6.png" alt="s" height="17px" />
       </div>
       <div class="header">
@@ -35,13 +23,11 @@
           <div class="folio">
             <img src="7.png" alt="s" height="10px" />
           </div>
-          <div class="fimage">
+          <div class="topIMAGE">
             <img src="9.png" alt="s" height="149px" width="320px" />
           </div>
           <div class="hello">
-            <p style="font-size: 39px; margin-left: 30px; position:absolute">
-              Hello,
-            </p>
+            <p class="HELLO">Hello,</p>
             <p class="pargh">
               Donec commodo leo est. quis eleifend urna pellentesque eget. Prion
               scelerisque odio eu nisi viverra. nec ullamcorper augue sagittis.
@@ -73,18 +59,13 @@
           </a>
         </div>
         <div class="loading">
-          <a>LOADING</a>
+          <p>LOADING</p>
         </div>
         <div class="comunication">
           <img src="8.png" alt="s" height="90px" />
         </div>
-        <div class="num">
-          <a
-            href="tel:1.800.123.456"
-            style="text-decoration: none; color: #000000"
-          >
-            1.800.123.456</a
-          >
+        <div class="phoneSHAPE">
+          <a href="tel:1.800.123.456" class="cellphone"> 1.800.123.456</a>
           <p class="Ptelphone">
             Donec commodo leo est. quis eleifend urna pellentesque eget. Prion
             scelerisque odio eu nisi viverra. nec ullamcorper augue sagittis.
@@ -92,19 +73,9 @@
             <a href="ayham.2016.2015@gmail.com" class="contact">contact me</a>
           </p>
           <p class="socail">
-            <a
-              href="https://www.facebook.com"
-              style="text-decoration: none; margin: 20px; color: #000000"
-              >FACEBOOK</a
-            ><a
-              href="https://www.twitter.com"
-              style="text-decoration: none; color: #000000; margin: 20px"
-              >TWITTER</a
-            ><a
-              href="https://dribbble.com"
-              style="text-decoration: none; color: #000000; margin: 20px"
-              >DIBBBLE</a
-            >
+            <a href="https://www.facebook.com" class="links">FACEBOOK</a
+            ><a href="https://www.twitter.com" class="links">TWITTER</a
+            ><a href="https://dribbble.com" class="links">DIBBBLE</a>
           </p>
           <div class="linear">
             <img src="lin.png" alt="s" height="50px" />
@@ -116,8 +87,8 @@
       <div class="xbutton">
         <button class="end-Button"><img src="end.png" alt="s" /></button>
       </div>
-      <div class="Chead">
-        <div class="Ihead">
+      <div class="mainPAGE2">
+        <div class="topIMAGE2">
           <img src="9.png" alt="s" height="170px" width="300px" />
         </div>
         <div class="light2">
@@ -129,27 +100,27 @@
         <div class="profile">
           <img src="ayham.jpg" id="pro" alt="s" height="120px" width="120px" />
         </div>
-        <div class="wave">
+        <div class="waveIMAGE">
           <img src="4.png" alt="s" height="20px" />
         </div>
-        <div class="Htext">
-          <a>Hello, i'm ayham <strong>Jameel</strong></a>
+        <div class="profileTEXT">
+          <p>Hello, i'm ayham <strong>Jameel</strong></p>
         </div>
-        <div class="Htext2">
+        <div class="profileParagraph">
           <a
             >nec ullamcorper augue sagitssis. Proin faucibus lorem nisi. Donec
             commodo leo est, quis eleifend urna pellentesque eget.</a
           >
         </div>
-        <div class="Hparagraph">
+        <div class="containAREA">
           <a
             >Proion scelerisque odio eu nisi viverra, nec ullamcorper gue
-            <a href="mailto:ayham.2016.2015@gmail.com" style="color: #00FFFF"
+            <a href="mailto:ayham.2016.2015@gmail.com" class="email-link"
               >contact me</a
-            ></a
-          >
+            >
+          </a>
         </div>
-        <div class="Fshape">
+        <div class="shapes">
           <div class="shape1">
             <div class="textShape">
               <a>PHOTOSHOP</a>
@@ -186,7 +157,7 @@
             <span class="gridNum">2000 - 2008</span>
             <span class="gridName"
               >Jr. Graphic Designer |
-              <a href="https://www.linkedin.com/company/atxabc" style="text-decoration: none; color: #00FFFF"
+              <a href="https://www.linkedin.com/company/atxabc" class="footer"
                 >ABC lnc.</a
               ></span
             >
@@ -195,9 +166,7 @@
             <span class="gridNum">2008 - 2010</span>
             <span class="gridName"
               >Graphic Specialist |
-              <a
-                href="https://graphicstudiodublin.com/"
-                style="text-decoration: none; color: #00FFFF"
+              <a href="https://graphicstudiodublin.com/" class="footer"
                 >GRAPHICSTUDIO</a
               ></span
             >
@@ -206,9 +175,7 @@
             <span class="gridNum">2010 - Present</span>
             <span class="gridName"
               >Creative Director |
-              <a
-                href="https://desygner.com/"
-                style="text-decoration: none; color: #00FFFF"
+              <a href="https://desygner.com/" class="footer"
                 >DESIGN ARTS</a
               ></span
             >
