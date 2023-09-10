@@ -17,7 +17,7 @@ html, body
 
 .main-page 
 	width: 100%
-	background-image: linear-gradient(to bottom, @var1 70%, rgba(128, 128, 128, 0.062745098) 70%)
+	background-image: linear-gradient(to bottom, $var1 70%, rgba(128, 128, 128, 0.062745098) 70%)
 	position: absolute
 	z-index: -1
 	&2 
@@ -34,8 +34,8 @@ html, body
 	position: absolute
 	margin-top: 340px
 	margin-left: 500px
-	background-color: @var1
-	color: @var1
+	background-color: $var1
+	color: $var1
 	border: none
 	cursor: pointer
 	img 
@@ -71,10 +71,11 @@ html, body
 	&-text 
 		font-size: 50px
 		margin: 0 auto
-		margin-top: 20px
+		margin-top: 10px
 		margin-left: 30px
 		position: absolute
 		font-size: 60px
+		text-align: left
 	
 	&-paragraph 
 		padding-top: 65px
@@ -82,9 +83,6 @@ html, body
 		font-family: sans-serif
 		color: rgba(26, 60, 49, 0.4941176471)
 	
-.phello 
-	text-align: left
-
 .light-image 
 	height: 20px
 	width: 20px
@@ -159,7 +157,7 @@ html, body
 
 .cellphone 
 	text-decoration: none
-	color: @var2
+	color: $var2
 
 .phone-paragraph 
 	font-size: 10px
@@ -173,12 +171,12 @@ html, body
 .links 
 	text-decoration: none
 	margin: 20px
-	color: @var2
+	color: $var2
 
 .socail 
 	letter-spacing: 6px
 	font-size: 10px
-	color: @var3
+	color: $var3
 	padding-top: 20px
 
 .button 
@@ -186,7 +184,7 @@ html, body
 	z-index: 1
 	border: none
 
-.arrowIMAGE 
+.arrow-image
 	position: absolute
 	margin-top: 758px
 	margin-left: 200px
@@ -196,10 +194,10 @@ html, body
 	padding-bottom: 100px
 	width: 1463px
 	height: 440px
-	border: 2px solid @var2
+	border: 2px solid $var2
 	display: none
 	margin-bottom: 225px
-	background-color: @var4
+	background-color: $var4
 
 .arrow-image2 
 	height: 40px
@@ -272,8 +270,8 @@ html, body
 .black-shape 
 	width: 127px
 	height: 1px
-	border: 2px solid @var2
-	background-color: @var2
+	border: 2px solid $var2
+	background-color: $var2
 	position: absolute
 	border-radius: 10px
 	margin-top: 7px
@@ -282,7 +280,7 @@ html, body
 	position: absolute
 	width: 110px
 	height: 4px
-	background-color: @var5
+	background-color: $var5
 	margin-top: 1px
 	z-index: 1
 	border-radius: 5px
@@ -292,7 +290,7 @@ html, body
 	position: absolute
 	width: 90px
 	height: 4px
-	background-color: @var6
+	background-color: $var6
 	margin-top: 1px
 	z-index: 1
 	border-radius: 5px
@@ -308,7 +306,7 @@ html, body
 	position: absolute
 	width: 80px
 	height: 4px
-	background-color: @var7
+	background-color: $var7
 	margin-top: 1px
 	z-index: 1
 	border-radius: 5px
@@ -321,7 +319,7 @@ html, body
 	color: rgba(255, 255, 255, 0.7)
 
 .grid-item2 
-	background-color: @var4
+	background-color: $var4
 	border: 1px solid rgba(128, 128, 128, 0.1333333333)
 	padding: 10px
 	margin-top: 20px
