@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -9,10 +10,15 @@ html, body {
 
 .main-page {
   width: 100%;
-  background-image: linear-gradient(to bottom, #ffffff 70%, rgba(128, 128, 128, 0.062745098) 70%);
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff 70%,
+    rgba(128, 128, 128, 0.062745098) 70%
+  );
   position: absolute;
   z-index: -1;
 }
+
 .main-page2 {
   width: 520px;
   height: 599px;
@@ -34,6 +40,7 @@ html, body {
   border: none;
   cursor: pointer;
 }
+
 .list-button img {
   width: 15px;
   height: 10px;
@@ -57,6 +64,7 @@ html, body {
   padding-top: 270px;
   position: absolute;
 }
+
 .top-image2 {
   height: 50%;
   position: absolute;
@@ -70,6 +78,7 @@ html, body {
   padding-top: 350px;
   position: absolute;
 }
+
 .greeting-text {
   font-size: 50px;
   margin: 0 auto;
@@ -79,6 +88,7 @@ html, body {
   font-size: 60px;
   text-align: left;
 }
+
 .greeting-paragraph {
   padding-top: 65px;
   font-size: 6px;
@@ -93,6 +103,7 @@ html, body {
   padding-top: 440px;
   position: absolute;
 }
+
 .light-image2 {
   height: 40px;
   position: absolute;
@@ -128,6 +139,7 @@ html, body {
   max-width: 100%;
   padding-top: 390px;
 }
+
 .grid-container2 {
   display: grid;
   grid-template-columns: 30% auto 30%;
@@ -142,6 +154,7 @@ html, body {
   object-fit: cover;
   cursor: pointer;
 }
+
 .square-image-link {
   display: block;
   width: 100%;
@@ -239,6 +252,7 @@ html, body {
   position: absolute;
   z-index: 2;
 }
+
 .profile-text {
   width: 100%;
   height: 20px;
@@ -247,10 +261,12 @@ html, body {
   text-align: center;
   letter-spacing: 1px;
 }
+
 .profile-text strong {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.7);
 }
+
 .profile-paragraph {
   padding-top: 30px;
   width: 100%;
@@ -370,14 +386,17 @@ html, body {
   color: rgba(255, 255, 255, 0.7);
   width: 100%;
 }
+
 .grid-item2:nth-child(1) {
   justify-content: flex-end;
   border-bottom: 0;
   border-left: 0;
 }
+
 .grid-item2:nth-child(2) {
   border-bottom: 0;
 }
+
 .grid-item2:nth-child(3) {
   justify-content: flex-start;
   border-bottom: 0;
@@ -415,7 +434,8 @@ html, body {
   border: 0;
   cursor: pointer;
 }
+
 .end-Button img {
   width: 13px;
   height: 13px;
-}/*# sourceMappingURL=assighment2.css.map */
+} /*# sourceMappingURL=assighment2.css.map */
