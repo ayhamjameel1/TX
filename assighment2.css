@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -10,11 +9,7 @@ body {
 
 .main-page {
   width: 100%;
-  background-image: linear-gradient(
-    to bottom,
-    #ffffff 70%,
-    rgba(128, 128, 128, 0.062745098) 70%
-  );
+  background-image: linear-gradient(to bottom, #ffffff 70%, rgba(128, 128, 128, 0.062745098) 70%);
   position: absolute;
   z-index: -1;
 }
@@ -48,7 +43,7 @@ body {
   height: 150px;
 }
 
-.folio {
+.folio-image {
   width: -moz-max-content;
   width: max-content;
   padding-top: 330px;
@@ -186,7 +181,7 @@ body {
   color: rgba(26, 60, 49, 0.4941176471);
 }
 
-.contact-link {
+.contact-links {
   text-decoration: none;
   color: rgba(0, 255, 255, 0.68);
 }
@@ -423,4 +418,4 @@ body {
 .end-Button img {
   width: 13px;
   height: 13px;
-} /*# sourceMappingURL=assighment2.css.map */
+}/*# sourceMappingURL=assighment2.css.map */
