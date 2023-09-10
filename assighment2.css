@@ -164,7 +164,7 @@ html, body {
   color: rgba(26, 60, 49, 0.4941176471);
 }
 
-.contact-links {
+.contact-link {
   text-decoration: none;
   color: rgba(0, 255, 255, 0.68);
 }
@@ -200,7 +200,7 @@ html, body {
   width: 1463px;
   height: 440px;
   border: 2px solid #000000;
-  display: 0;
+  display: none;
   margin-bottom: 225px;
   background-color: #1e1919;
 }
@@ -213,7 +213,6 @@ html, body {
 
 .top-image2 {
   height: 50%;
-  justify-self: center;
   position: absolute;
   z-index: 1;
   margin-left: 100px;
@@ -258,9 +257,12 @@ html, body {
   padding-top: 190px;
   text-align: center;
   letter-spacing: 1px;
+}
+.profile-text strong {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.7);
 }
+
 .profile-paragraph {
   padding-top: 30px;
   width: 100%;
