@@ -142,7 +142,7 @@ html, body {
   object-fit: cover;
   cursor: pointer;
 }
-.square-image-link {
+.square-image--link {
   display: block;
   width: 100%;
   height: 100%;
