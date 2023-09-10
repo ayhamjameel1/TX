@@ -110,8 +110,6 @@ strong {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-top: 30px;
   padding-top: 150px;
 }
@@ -162,7 +160,6 @@ strong {
   color: #000000;
 }
 
-
 .phone-paragraph {
   font-size: 10px;
   padding-top: 6px;
@@ -193,15 +190,12 @@ strong {
   border: none;
 }
 
-
-
-.arrowIMAGE {
+.arrow-image {
   position: absolute;
   margin-top: 758px;
   margin-left: 200px;
   z-index: 0;
 }
-
 
 .head {
   padding-bottom: 100px;
@@ -221,9 +215,6 @@ strong {
 
 .top-image2 {
   height: 50%;
-  justify-self: center;
-  align-items: center;
-  text-align: center;
   position: absolute;
   z-index: +1;
   margin-left: 100px;
@@ -406,18 +397,18 @@ strong {
 
 .grid-item2:nth-child(1) {
   justify-content: flex-end;
-  border-bottom: none;
-  border-left: none;
+  border-bottom: 0;
+  border-left: 0;
 }
 
 .grid-item2:nth-child(2) {
-  border-bottom: none;
+  border-bottom: 0;
 }
 
 .grid-item2:nth-child(3) {
   justify-content: flex-start;
-  border-bottom: none;
-  border-right: none;
+  border-bottom: 0;
+  border-right: 0;
 }
 
 .grid-header {

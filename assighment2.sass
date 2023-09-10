@@ -1,70 +1,131 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+
+$white: #ffffff;
+$gray: #80808010;
+$black: #000000;
+$blue: #0000ff;
+$pink: #800080;
+$yellow: #ffff00;
+$darkGray: #1a3c317e;
+$lightGray: #dcdcdc7d;
+$transparentBlack: rgba(0, 0, 0, 0.6);
+$transparentWhite: rgba(255, 255, 255, 0.7);
+$transparentCyan: rgba(0, 255, 255, 0.68);
+
+@mixin absolute($top, $left) {
+  position: absolute;
+  margin-top: $top;
+  margin-left: $left;
+}
+
+@mixin flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.mainPAGE {
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  @include flex-center;
+}
+
+.main-page {
   width: 100%;
-  background-image: linear-gradient(to bottom, #ffffff 70%, #80808010 70%);
+  background-image: linear-gradient(to bottom, $white 70%, $gray 70%);
   position: absolute;
   z-index: -1;
 }
+
 .header {
   width: 400px;
   margin: 0 auto;
   position: relative;
 }
-.Cheader {
+
+.list-button {
+  @include absolute(340px, 500px);
+  background-color: $white;
+  color: $white;
+  border: none;
+  cursor: pointer;
+}
+
+.list-button img {
+  width: 15px;
+  height: 10px;
+}
+
+.content-header {
   height: 150px;
 }
+
 .folio {
   width: max-content;
   padding-top: 330px;
   position: absolute;
 }
-.topIMAGE {
+
+.top-image {
   height: 199px;
   max-width: 100%;
   padding-left: 70px;
   padding-top: 270px;
   position: absolute;
 }
-.hello {
+
+.greeting {
   height: 200px;
   width: 200px;
   padding-top: 350px;
   position: absolute;
 }
-.HELLO {
+
+.greeting-text {
   font-size: 50px;
   margin: 0 auto;
   margin-top: 20px;
   margin-left: 30px;
   position: absolute;
+  strong {
+    font-size: 60px;
+  }
 }
-strong {
-  font-size: 60px;
-}
-p.pargh {
+
+.greeting-paragraph {
   padding-top: 65px;
   font-size: 6px;
   font-family: sans-serif;
-  color: #1a3c317e;
+  color: $darkGray;
 }
+
 .phello {
   text-align: left;
 }
-.light {
+
+.light-image {
   height: 20px;
   width: 20px;
   padding-left: 260px;
   padding-top: 440px;
   position: absolute;
 }
+
+.image4 {
+  z-index: 0;
+  padding-left: 30px;
+  padding-top: 20px;
+  position: absolute;
+}
+
+.image5 {
+  z-index: -1;
+  position: absolute;
+  padding-left: 380px;
+  padding-top: 701px;
+}
+
 .images {
   max-width: 100%;
   display: flex;
@@ -74,23 +135,27 @@ p.pargh {
   margin-top: 30px;
   padding-top: 150px;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 100%;
   padding-top: 390px;
 }
-.square-image-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
+
 .square-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   cursor: pointer;
 }
+
+.square-image-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .loading {
   width: 100%;
   text-align: center;
@@ -98,94 +163,80 @@ p.pargh {
   font-size: 7px;
   padding-top: 10px;
 }
+
 .comunication {
   max-width: 100%;
   padding-left: 47%;
   padding-top: 40px;
 }
-.phoneSHAPE {
+
+.phone-shape {
   width: 100%;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
   padding-top: 20px;
 }
-.Ptelphone {
+
+.cellphone {
+  text-decoration: none;
+  color: $black;
+}
+
+.phone-paragraph {
   font-size: 10px;
   padding-top: 6px;
-  color: #1a3c317e;
+  color: $darkGray;
 }
-.contact {
+
+.contact-link {
   text-decoration: none;
-  color: #00ffffad;
+  color: $transparentCyan;
 }
+
 .links {
   text-decoration: none;
   margin: 20px;
-  color: #000000;
+  color: $black;
 }
+
 .socail {
   letter-spacing: 6px;
   font-size: 10px;
   color: #3c0000;
   padding-top: 20px;
 }
-.img4 {
-  z-index: 0;
-  padding-left: 30px;
-  padding-top: 20px;
-  position: absolute;
-}
-.img5 {
-  z-index: -1;
-  position: absolute;
-  padding-left: 380px;
-  padding-top: 701px;
-}
+
 .button {
   position: absolute;
   z-index: +1;
   border: none;
 }
-.list-button {
-  position: absolute;
-  background-color: #ffffff;
-  color: #ffffff;
-  margin-top: 340px;
-  margin-left: 500px;
-  border: none;
-  cursor: pointer;
-}
 
-.list-button img {
-  width: 15px;
-  height: 10px;
-}
 .arrowIMAGE {
   position: absolute;
   margin-top: 758px;
   margin-left: 200px;
   z-index: 0;
 }
-.cellphone {
-  text-decoration: none;
-  color: #000000;
-}
+
 .head {
   padding-bottom: 100px;
   width: 1463px;
   height: 440px;
-  border: 2px solid #5e0101;
+  border: 2px solid $black;
   display: none;
   margin-bottom: 225px;
   background-color: #1e1919;
 }
-.mainPAGE2 {
+
+.main-page2 {
   width: 520px;
   height: 599px;
   margin-left: 33.5%;
 }
-.topIMAGE2 {
+
+.top-image2 {
   height: 50%;
   justify-self: center;
   align-items: center;
@@ -194,18 +245,21 @@ p.pargh {
   z-index: +1;
   margin-left: 100px;
 }
-.light2 {
+
+.light-image2 {
   height: 40px;
   position: absolute;
   margin-top: 90px;
   margin-left: 130px;
 }
-.arrow2 {
+
+.arrow-image2 {
   height: 40px;
   margin-top: 120px;
   margin-left: 400px;
   position: absolute;
 }
+
 .profile {
   border-radius: 50%;
   overflow: hidden;
@@ -216,117 +270,133 @@ p.pargh {
   position: absolute;
   z-index: +2;
 }
-.waveIMAGE {
+
+.wave-image {
   margin-top: 150px;
   margin-left: 180px;
   position: absolute;
   z-index: +2;
 }
-.profileTEXT {
+
+.profile-text {
   width: 100%;
   height: 20px;
-  color: #ffffffa3;
+  color: $transparentWhite;
   padding-top: 190px;
   text-align: center;
   letter-spacing: 1px;
+  strong {
+    font-size: 18px;
+    color: $transparentWhite;
+  }
 }
-strong {
-  font-size: 18px;
-  color: #ffffff;
-}
-.profileParagraph {
+
+.profile-paragraph {
   padding-top: 30px;
   width: 100%;
-  color: #dcdcdc7d;
+  color: $lightGray;
   text-align: center;
   font-size: 13px;
 }
-.containAREA {
+
+.contacting-area {
   height: 50px;
   text-align: center;
   padding-top: 21px;
-  color: #ffffff32;
+  color: $transparentWhite;
   font-size: 13px;
 }
+
 .shapes {
   width: 100%;
   height: 70px;
   padding-top: 20px;
   z-index: +1;
 }
+
 .shape1 {
   width: 130px;
   height: 68px;
   position: absolute;
 }
+
 .shape2 {
   width: 130px;
   height: 68px;
   position: absolute;
   margin-left: 190px;
 }
-.textShape {
+
+.text-shape {
   font-size: 10px;
   text-align: center;
-  color: #ffffff;
+  color: $transparentWhite;
 }
-.blackShape {
+
+.black-shape {
   width: 127px;
   height: 1px;
-  border: 2px solid #000000;
-  background-color: #000000;
+  border: 2px solid $black;
+  background-color: $black;
   position: absolute;
   border-radius: 10px;
   margin-top: 7px;
 }
-.pinkShape {
+
+.pink-shape {
   position: absolute;
   width: 110px;
   height: 4px;
-  background-color: #800080;
+  background-color: $pink;
   margin-top: 1px;
   z-index: +1;
   border-radius: 5px;
   margin-top: 7px;
 }
-.yellowShape {
+
+.yellow-shape {
   position: absolute;
   width: 90px;
   height: 4px;
-  background-color: #ffff00;
+  background-color: $yellow;
   margin-top: 1px;
   z-index: +1;
   border-radius: 5px;
   margin-top: 7px;
 }
+
 .shape3 {
   width: 130px;
   height: 68px;
   position: absolute;
   margin-left: 387px;
 }
-.blueShape {
+
+.blue-shape {
   position: absolute;
   width: 80px;
   height: 4px;
-  background-color: #0000ff;
+  background-color: $blue;
   margin-top: 1px;
   z-index: +1;
   border-radius: 5px;
   margin-top: 7px;
 }
-.shapePercentge {
+
+.shape-percentge {
   font-size: 10px;
   text-align: center;
   padding-top: 17px;
-  color: #ffffff;
+  color: $transparentWhite;
 }
+
 .grid-container2 {
   display: grid;
   grid-template-columns: 30% auto 30%;
   padding: 10px;
   text-align: center;
 }
+
 .grid-item2 {
   background-color: #1e1919;
   border: 1px solid #80808022;
@@ -337,35 +407,43 @@ strong {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #ffffff;
+  color: $transparentWhite;
   width: 100%;
 }
+
 .footer {
   text-decoration: none;
-  color: #00ffff;
+  color: $transparentCyan;
 }
+
 .email-link {
-  color: #00ffff;
+  color: $transparentCyan;
 }
+
 .grid-item2:nth-child(1) {
   justify-content: flex-end;
   border-bottom: none;
   border-left: none;
 }
+
 .grid-item2:nth-child(2) {
   border-bottom: none;
 }
+
 .grid-item2:nth-child(3) {
   justify-content: flex-start;
   border-bottom: none;
   border-right: none;
 }
-.gridNum {
+
+.grid-header {
   font-size: 18px;
 }
-.gridName {
+
+.grid-description {
   font-size: 8px;
 }
+
 .xbutton {
   background-color: #00000000;
   position: absolute;
@@ -374,11 +452,13 @@ strong {
   margin-top: 50px;
   cursor: pointer;
 }
+
 .end-Button {
   background-color: #00000000;
   border: none;
   cursor: pointer;
 }
+
 .end-Button img {
   width: 13px;
   height: 13px;
